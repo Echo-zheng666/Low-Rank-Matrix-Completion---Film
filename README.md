@@ -34,7 +34,7 @@ $$\min_{X} \|X\|_{*} + \lambda_{reg} \cdot \|X - R\|_F^2$$
 - $\lambda_{reg}: 0.15$
 - 最大迭代次数 $\mathrm{max\_iter}: 150$
 
-### 3.2 非凸优化方法：谱初始化 (Spectral Initialization) + 梯度下降 (Gradient Descent)
+### 3.2 非凸优化方法：谱初始化 (Spectral Initialization) + 交替最小化（Alternating Minimization）
 非凸优化方法的核心思路是将待补全的低秩评分矩阵 \(R\) 低秩分解为两个低秩矩阵的乘积。
 矩阵维度与定义：
 - 原始评分矩阵：R 为 m×n 维实数矩阵
